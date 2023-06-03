@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Real Time Sensor Display Using Python, Flask, Flask-SocketIO</title>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js" integrity="sha512-aMGMvNYu8Ue4G+fHa359jcPb1u+ytAF+P2SCb+PxrjCdO3n3ZTxJ30zuH39rimUggmTwmh2u7wvQsDTHESnmfQ==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <script src="{{ url_for('static', filename='js/socket.io.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/chart.min.js') }}"></script>
     <link
-      href="//mincss.com/entireframework.min.css"
+      href="{{ url_for('static', filename = 'css/entireframework.min.css') }}"
       rel="stylesheet"
-      type="text/css"
     />
     <link href="{{url_for('static', filename = 'css/app.css')}}" rel="stylesheet">
     <script src="{{ url_for('static', filename = 'js/app.js') }}"></script>
